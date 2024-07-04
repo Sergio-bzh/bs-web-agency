@@ -4,8 +4,64 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    block-size: border-box;
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: antiquewhite; /* Stylesheet link vérification */
+}
+
+/** START header **/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header_nav_bar{
+    display: flex;
+    gap: 2rem;
+}
+
+.nav_item a{
+    color: grey;
+    
+}
+
+.nav_item a:hover{
+    color: black;
+    border-top: 3px solid blue;
+}
+/** END header **/
+
+/** START accueil section **/
+#accueil{
+    border: 5px solid blue;
+}
+
+/* .accueil_image_container{
+    max-width: 100vw;
+    height: 400px;
+    background-image:url(/assets/images/slider/bg1.jpg);
+} */
+
+img{
+    max-width: 100%;
+}
+
+#accueil .img_container img {
+    width: 100vw;
+}
+
+/** END accueil section **/
+
+/** START services **/
+#services{
+    border: 5px solid green;
+}
+/** END services **/
+
+#portfolio{
+    border: 5px solid brown;
 }

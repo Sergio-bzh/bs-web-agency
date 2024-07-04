@@ -1,1 +1,1 @@
-alert("Le fichier est bien lié");
+// alert("Le fichier est bien lié");

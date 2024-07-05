@@ -76,7 +76,7 @@ section p{
 Selecteurs de la section: #services .services_container .hero .subjects .subject-wrapper
 .line .line_point .circle .circle_point .content
 */
-#services, #portfolio{
+#services, #portfolio, #contact{
     /* border: 5px solid green; */
     display: flex;
     flex-direction: column;
@@ -117,7 +117,18 @@ Selecteurs de la section: #services .services_container .hero .subjects .subject
     border-radius: 50%;
     height: 70px;
     min-width: 70px;
+    margin-top: -2rem; /* Ajouté pour faire monter un peu les circle et l'aligner */
     margin-right: 1%;
+    /** Dans les deux lignes ci-dessous je crée l'annimation du circle **/
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 2s linear infinite;
+}
+/** Avec le @keyframe j'active l'annimation du circle **/
+@keyframes spin {
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
 .circle_point{
     border: 1px solid #2596be;
@@ -142,3 +153,13 @@ h3{
     border: 5px solid brown;
 }
 /** END project portfolio **/
+
+/** START contact section **/
+#contact{
+    border: 5px solid goldenrod;
+}
+
+/** START footer **/
+footer{
+    background-color: antiquewhite;
+}

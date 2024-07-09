@@ -152,6 +152,29 @@ h3{
 #portfolio{
     border: 5px solid brown;
 }
+.choice_bar{
+    display: flex;
+    align-self: center;
+    width: 16rem;
+    align-items: center;
+    justify-content: space-evenly;
+    /* gap: 1%; */
+    background-color: rgba(0, 0, 0, .1);
+    border: 1px solid magenta;
+    min-width:fit-content;
+    /* box-sizing:content-box; */
+    /* width:auto; */
+}
+.choice_item{
+    /* text-decoration: underline; */
+    border: 1px solid magenta;
+    /* margin: 1%; */
+    padding: 1%;
+    /* background-color: rgba(0, 0, 0, .1); */
+}
+.choice_item:hover{
+    text-decoration: underline;
+}
 /** END project portfolio **/
 
 /** START contact section **/

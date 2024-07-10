@@ -5,11 +5,9 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    /* block-size: border-box; */
 }
 
 body {
-    /* background-color: antiquewhite; Stylesheet link vérification */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +48,6 @@ main{
 
 /* TODO: Mettre en place le titre principal, le texte et le bouton "plus d'info" */
 #accueil{
-    /* border: 5px solid blue; */
     display: block;
     padding-top: 3.rem;
 }
@@ -72,12 +69,7 @@ section p{
 /** END accueil section **/
 
 /** START services **/
-/*
-Selecteurs de la section: #services .services_container .hero .subjects .subject-wrapper
-.line .line_point .circle .circle_point .content
-*/
 #services, #portfolio, #contact{
-    /* border: 5px solid green; */
     display: flex;
     flex-direction: column;
 }
@@ -150,37 +142,46 @@ h3{
 
 /** START project portfolio **/
 #portfolio{
-    border: 5px solid brown;
+    text-align: center;
 }
 .choice_bar{
     display: flex;
     align-self: center;
     width: 16rem;
+    height: 2rem;
     align-items: center;
     justify-content: space-evenly;
-    /* gap: 1%; */
     background-color: rgba(0, 0, 0, .1);
-    border: 1px solid magenta;
-    min-width:fit-content;
-    /* box-sizing:content-box; */
-    /* width:auto; */
 }
 .choice_item{
     /* text-decoration: underline; */
-    border: 1px solid magenta;
     /* margin: 1%; */
     padding: 1%;
     /* background-color: rgba(0, 0, 0, .1); */
 }
 .choice_item:hover{
-    text-decoration: underline;
+    text-decoration: underline; /* Hover mis en place en attendant de pouvoir travailler sur les petis picots des items */
+}
+.projects_wrapper{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.article_image{
+    text-align: center;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+}
+.article_image img{
+    width: 25vw;
+    padding: 1%;
 }
 /** END project portfolio **/
 
 /** START contact section **/
 #contact{
     background-color: white;
-    /* border: 5px solid goldenrod; */
 }
 #contact{
     position: relative;
@@ -194,19 +195,19 @@ iframe{
 .filter{
     margin-top: 2rem;
     position: relative;
-    /* border: 10px solid blue; */
     width: 100%;
     height: 700px;
-    /* background-color: rgba(0, 0, 0, .4); */
     background-color: rgb(123, 104, 328, 0.3);
 }
 
 form{
     max-width: 300px;
     min-height:400px;
-    position: relative;
-    left:800px;
-    bottom: 650px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 8rem;
+    margin-right: 2rem;
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 5px;

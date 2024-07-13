@@ -15,6 +15,7 @@ body {
 
 /** START header **/
 header{
+    z-index: 1000;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
@@ -26,17 +27,14 @@ header{
 main{
     max-width: 80vw;
 }
-
 .header_nav_bar{
     display: flex;
     gap: 2rem;
 }
-
 .nav_item a{
     color: grey;
     
 }
-
 .nav_item a:hover{
     color: black;
     border-top: 3px solid blue;
@@ -48,11 +46,15 @@ main{
 
 /* TODO: Mettre en place le titre principal, le texte et le bouton "plus d'info" */
 #accueil{
-    display: block;
+    /* display: block; */
     padding-top: 3.rem;
 }
 .accueil_image_wrapper{
+    position: relative;
     max-width: 100vw;
+}
+.accueil_image_container p{
+    display: none;
 }
 .accueil_image_wrapper img{
     width: 100%;
@@ -145,10 +147,12 @@ h3{
     text-align: center;
 }
 .choice_bar{
-    display: flex;
     align-self: center;
-    width: 16rem;
-    height: 2rem;
+    width: 22rem;
+    height: 2.2rem;
+    margin-top: -1.2rem;
+    margin-bottom: 3rem;
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
     background-color: rgba(0, 0, 0, .1);
@@ -156,6 +160,7 @@ h3{
 .choice_item{
     /* text-decoration: underline; */
     /* margin: 1%; */
+    min-width: 40px;
     padding: 1%;
     /* background-color: rgba(0, 0, 0, .1); */
 }
@@ -168,14 +173,43 @@ h3{
     flex-wrap: wrap;
     justify-content: center;
 }
+figure{
+    position: relative;
+}
 .article_image{
     text-align: center;
     /* display: flex; */
     /* flex-wrap: wrap; */
 }
+.article_image_wrapper{
+    position: relative;
+}
 .article_image img{
-    width: 25vw;
+    width: 20vw;
     padding: 1%;
+}
+.article_mask{
+    width: 97.5%;
+    height: 6rem;
+    right: -0.33rem;
+    position: relative;
+    top: -6.4rem;
+    background-color: rgba(128, 128, 128, 0.4);
+    border: 1px solid red;
+}
+figcaption{
+    /* display:none; */
+    width: 20vw;
+    position: absolute;
+    z-index: 5;
+    top: 45%;
+    height: 9rem;
+    background-color: rgba(128, 128, 128,0.7);
+    opacity: 0;
+}
+figcaption:hover{
+    opacity: 1;
+    transition: 0.2sc;
 }
 /** END project portfolio **/
 

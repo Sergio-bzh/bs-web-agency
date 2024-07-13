@@ -5,11 +5,9 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    /* block-size: border-box; */
 }
 
 body {
-    /* background-color: antiquewhite; Stylesheet link vérification */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,6 +15,7 @@ body {
 
 /** START header **/
 header{
+    z-index: 1000;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
@@ -28,17 +27,14 @@ header{
 main{
     max-width: 80vw;
 }
-
 .header_nav_bar{
     display: flex;
     gap: 2rem;
 }
-
 .nav_item a{
     color: grey;
     
 }
-
 .nav_item a:hover{
     color: black;
     border-top: 3px solid blue;
@@ -50,12 +46,15 @@ main{
 
 /* TODO: Mettre en place le titre principal, le texte et le bouton "plus d'info" */
 #accueil{
-    /* border: 5px solid blue; */
-    display: block;
+    /* display: block; */
     padding-top: 3.rem;
 }
 .accueil_image_wrapper{
+    position: relative;
     max-width: 100vw;
+}
+.accueil_image_container p{
+    display: none;
 }
 .accueil_image_wrapper img{
     width: 100%;
@@ -72,12 +71,7 @@ section p{
 /** END accueil section **/
 
 /** START services **/
-/*
-Selecteurs de la section: #services .services_container .hero .subjects .subject-wrapper
-.line .line_point .circle .circle_point .content
-*/
 #services, #portfolio, #contact{
-    /* border: 5px solid green; */
     display: flex;
     flex-direction: column;
 }
@@ -150,14 +144,78 @@ h3{
 
 /** START project portfolio **/
 #portfolio{
-    border: 5px solid brown;
+    text-align: center;
+}
+.choice_bar{
+    align-self: center;
+    width: 22rem;
+    height: 2.2rem;
+    margin-top: -1.2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, .1);
+}
+.choice_item{
+    /* text-decoration: underline; */
+    /* margin: 1%; */
+    min-width: 40px;
+    padding: 1%;
+    /* background-color: rgba(0, 0, 0, .1); */
+}
+.choice_item:hover{
+    text-decoration: underline; /* Hover mis en place en attendant de pouvoir travailler sur les petis picots des items */
+}
+.projects_wrapper{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+figure{
+    position: relative;
+}
+.article_image{
+    text-align: center;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+}
+.article_image_wrapper{
+    position: relative;
+}
+.article_image img{
+    width: 20vw;
+    padding: 1%;
+}
+.article_mask{
+    width: 97.5%;
+    height: 6rem;
+    right: -0.33rem;
+    position: relative;
+    top: -6.4rem;
+    background-color: rgba(128, 128, 128, 0.4);
+    border: 1px solid red;
+}
+figcaption{
+    /* display:none; */
+    width: 20vw;
+    position: absolute;
+    z-index: 5;
+    top: 45%;
+    height: 9rem;
+    background-color: rgba(128, 128, 128,0.7);
+    opacity: 0;
+}
+figcaption:hover{
+    opacity: 1;
+    transition: 0.2sc;
 }
 /** END project portfolio **/
 
 /** START contact section **/
 #contact{
     background-color: white;
-    /* border: 5px solid goldenrod; */
 }
 #contact{
     position: relative;
@@ -171,19 +229,19 @@ iframe{
 .filter{
     margin-top: 2rem;
     position: relative;
-    /* border: 10px solid blue; */
     width: 100%;
     height: 700px;
-    /* background-color: rgba(0, 0, 0, .4); */
     background-color: rgb(123, 104, 328, 0.3);
 }
 
 form{
     max-width: 300px;
     min-height:400px;
-    position: relative;
-    left:800px;
-    bottom: 650px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 8rem;
+    margin-right: 2rem;
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 5px;

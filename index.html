@@ -65,7 +65,7 @@
             </div>
         </section>
 
-        <section id="services">
+        <section class="container " id="services">
         <h2>Nos services</h2>
         <div class="line"></div>
         <div class="line_point"></div>
@@ -114,13 +114,13 @@
             </div>
         </div>
         </section>
-        <section id="portfolio">
+        <section class="container " id="portfolio">
             <h2>Nos projets</h2>
             <div class="line"></div>
             <div class="line_point"></div>
             <p class="text-center">Beaucoup d'entreprises et particuliers nous ont fait confiance pour leurs projets! Découvrez une séléction de nos <br>réalisations tendances, modernes et innovantes.</p>
 
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center my-2">
                 <!-- <a class="nav-link active" aria-current="page" href="#accueil">Accueil</a> Il me faudra gérer la classe active -->
                 <a class="nav-link p-2 choice_item" href="#tous">Tous</a>
                 <a class="nav-link p-2 choice_item" href="#créations">Créations</a>
@@ -128,39 +128,87 @@
                 <a class="nav-link p-2 choice_item" href="#portfolio">Portfolio</a>
             </div>
 
-            <div class="projects_wrapper">
-                <figure class="article_image">
-                    <img src="assets/images/portfolio/01.jpg" alt="opticien">
-                    <figcaption>Optique 2000</figcaption>
-                </figure>
-                <figure class="article_image">
-                    <img src="assets/images/portfolio/02.jpg" alt="">
-                    <figcaption>Commentaire</figcaption>
-                </figure>
-                <figure class="article_image">
-                    <img src="assets/images/portfolio/03.jpg" alt="">
-                    <figcaption>Commentaire</figcaption>
-                </figure>
-                <figure class="article_image">
-                    <img src="assets/images/portfolio/04.jpg" alt="">
-                    <figcaption>Commentaire</figcaption>
-                </figure>
-                <figure class="article_image">
-                    <img src="assets/images/portfolio/05.jpg" alt="">
-                    <figcaption>Commentaire</figcaption>
-                </figure>
-                <figure class="article_image">
-                    <img src="assets/images/portfolio/06.jpg" alt="">
-                    <figcaption>Commentaire</figcaption>
-                </figure>
-                <figure class="article_image">
-                    <img src="assets/images/portfolio/07.jpg" alt="">
-                    <figcaption>Commentaire</figcaption>
-                </figure>
-                <figure class="article_image">
-                    <img src="assets/images/portfolio/08.jpg" alt="">
-                    <figcaption>Commentaire</figcaption>
-                </figure>
+            <div class="d-flex align-items-center flex-column flex-lg-row flex-lg-wrap projects_wrapper">
+                <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0 my-lg-3">
+                    <div class="card mx-1 " style="width: 18rem;;"> <!-- ATTENTION À PASSER dans le fichier css ! -->
+                        <img src="assets/images/portfolio/01.jpg" alt="opticien">
+                        <div class="card-body">
+                            <h5 class="card-title">Optique 2000</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga error ea debitis accusamus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0 my-lg-3">
+                    <div class="card mx-1 " style="width: 18rem;;"> <!-- ATTENTION À PASSER dans le fichier css ! -->
+                        <img src="assets/images/portfolio/02.jpg" alt="Commentaire">
+                        <div class="card-body">
+                            <h5 class="card-title">Commentaire</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga error ea debitis accusamus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0 my-lg-3">
+                    <div class="card mx-1 " style="width: 18rem;;"> <!-- ATTENTION À PASSER dans le fichier css ! -->
+                        <img src="assets/images/portfolio/03.jpg" alt="Commentaire">
+                        <div class="card-body">
+                            <h5 class="card-title">Commentaire</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga error ea debitis accusamus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0 my-lg-3">
+                    <div class="card mx-1 " style="width: 18rem;;"> <!-- ATTENTION À PASSER dans le fichier css ! -->
+                        <img src="assets/images/portfolio/04.jpg" alt="Commentaire">
+                        <div class="card-body">
+                            <h5 class="card-title">Commentaire</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga error ea debitis accusamus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0 my-lg-3">
+                    <div class="card mx-1 " style="width: 18rem;;"> <!-- ATTENTION À PASSER dans le fichier css ! -->
+                        <img src="assets/images/portfolio/05.jpg" alt="Commentaire">
+                        <div class="card-body">
+                            <h5 class="card-title">Commentaire</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga error ea debitis accusamus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0 my-lg-3">
+                    <div class="card mx-1 " style="width: 18rem;;"> <!-- ATTENTION À PASSER dans le fichier css ! -->
+                        <img src="assets/images/portfolio/06.jpg" alt="Commentaire">
+                        <div class="card-body">
+                            <h5 class="card-title">Commentaire</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga error ea debitis accusamus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0 my-lg-3">
+                    <div class="card mx-1 " style="width: 18rem;;"> <!-- ATTENTION À PASSER dans le fichier css ! -->
+                        <img src="assets/images/portfolio/07.jpg" alt="Commentaire">
+                        <div class="card-body">
+                            <h5 class="card-title">Commentaire</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga error ea debitis accusamus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3 mb-3 mb-sm-0 my-lg-3">
+                    <div class="card mx-1 " style="width: 18rem;;"> <!-- ATTENTION À PASSER dans le fichier css ! -->
+                        <img src="assets/images/portfolio/08.jpg" alt="Commentaire">
+                        <div class="card-body">
+                            <h5 class="card-title">Commentaire</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga error ea debitis accusamus.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 

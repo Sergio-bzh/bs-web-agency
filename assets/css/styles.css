@@ -63,7 +63,7 @@ section p{
 /** END accueil section **/
 
 /** START services **/
-/* #services, #portfolio, #contact{
+#services, #portfolio, #contact{
     display: flex;
     flex-direction: column;
 }
@@ -103,13 +103,13 @@ section p{
     border-radius: 50%;
     height: 70px;
     min-width: 70px;
-    margin-top: -2rem; Ajouté pour faire monter un peu les circle et l'aligner
+    margin-top: -2rem; /* Ajouté pour faire monter un peu les circle et l'aligner */
     margin-right: 1%;
-    * Dans les deux lignes ci-dessous je crée l'annimation du circle *
+    /* * Dans les deux lignes ci-dessous je crée l'annimation du circle * */
     -webkit-animation: spin 1s linear infinite;
     animation: spin 2s linear infinite;
 }
-* Avec le @keyframe j'active l'annimation du circle *
+/* * Avec le @keyframe j'active l'annimation du circle * */
 @keyframes spin {
     100%{
         -webkit-transform: rotate(360deg);
@@ -128,7 +128,6 @@ section p{
     flex-direction: column;
     align-content: center;
 }
-*/
 /** END services **/
 
 /** START project portfolio **/

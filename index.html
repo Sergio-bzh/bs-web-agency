@@ -4,38 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- TODO: M'inscrire à FontAwesome, récupérer le CDN et mettre en place les îcones-->
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
     crossorigin="anonymous" 
     referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
     <script src="assets/js/scripts.js" defer></script>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Web Agency</title>
+    <title>Web Agency avec BootStrap</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo_container">
+    <header class="fixed-top container-fluid d-flex justify-content-between pt-3">
+        <div class="logo_container ms-5">
             <img src="assets/images/logo.png" alt="logo">
         </div>
-        <nav class="header_nav">
-            <ul class="header_nav_bar">
-                <li class="nav_item"><a href="#accueil">Accueil</a></li>
-                <li class="nav_item"><a href="#services">Services</a></li>
-                <li class="nav_item"><a href="#portfolio">Portfolio</a></li>
-                <li class="nav_item"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+            <nav class="navbar navbar-expand-lg me-5 header_nav">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#accueil">Accueil</a> <!--- Il me faudra gérer la classe active -->
+              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+              <a class="nav-link" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
         <section id="accueil">
             <div class="accueil_image_container">
-                <h1><span class="accueil_title">Webagency</span>:L'agence de tous vos projets!</h1>
-                <p>Vous avez un projet web? La Webagency vous aide à le réaliser</p>
-                <input type="button" value="Plus d'infos">
-                <div class="accueil_image_wrapper">
+                <h1 class="position-absolute z-1 ms-5"><span class="accueil_title">Webagency</span> : L'agence de tous vos projets!</h1>
+                <p class="position-absolute z-1 ms-5">Vous avez un projet web? La Webagency vous aide à le réaliser</p>
+                <input class="position-absolute z-1 ms-5 p-1" type="button" value="Plus d'infos">
+                <div class="accueil_image_wrapper position-relative mt-5">
                     <img src="assets/images/slider/bg1.jpg"
                         alt="image de fond enfant avec les mains peintes multicouleurs">
                 </div>
@@ -45,6 +54,7 @@
                 <img src="assets/images/slider/bg2.jpg" alt="image de fond enfant avec un haut parleur">
             </div> -->
         </section>
+
         <section id="services">
         <h2>Nos services</h2>
         <div class="line"></div>

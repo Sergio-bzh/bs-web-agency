@@ -13,8 +13,32 @@ body {
     align-items: center;
 }
 
-/** START header **/
 header{
+    background-color: white;
+}
+
+h1{
+    margin-top: 14rem;
+    color: white;
+}
+
+.accueil_title{
+    color: #2596be;
+}
+.accueil_image_container p{
+    position: absolute;
+    margin-top: 20rem;
+    color: white;
+}
+.accueil_image_container input{
+    position: absolute;
+    margin-top: 22rem;
+    background-color: #2596be;
+    color: white;
+}
+
+/** START header **/
+/* header{
     z-index: 1000;
     background-color: #fff;
     display: flex;
@@ -38,15 +62,14 @@ main{
 .nav_item a:hover{
     color: black;
     border-top: 3px solid blue;
-}
+} */
 /** END header **/
 
 /** START accueil section **/
 /* Selecteurs de la section: .accueil .accueil_image_container .accueil_title (h1) .accueil_image_wrapper */
 
 /* TODO: Mettre en place le titre principal, le texte et le bouton "plus d'info" */
-#accueil{
-    /* display: block; */
+/* #accueil{
     padding-top: 3.rem;
 }
 .accueil_image_wrapper{
@@ -67,11 +90,11 @@ h2{
 }
 section p{
     margin-bottom: 2rem;
-}
+} */
 /** END accueil section **/
 
 /** START services **/
-#services, #portfolio, #contact{
+/* #services, #portfolio, #contact{
     display: flex;
     flex-direction: column;
 }
@@ -111,13 +134,13 @@ section p{
     border-radius: 50%;
     height: 70px;
     min-width: 70px;
-    margin-top: -2rem; /* Ajouté pour faire monter un peu les circle et l'aligner */
+    margin-top: -2rem; Ajouté pour faire monter un peu les circle et l'aligner
     margin-right: 1%;
-    /** Dans les deux lignes ci-dessous je crée l'annimation du circle **/
+    * Dans les deux lignes ci-dessous je crée l'annimation du circle *
     -webkit-animation: spin 1s linear infinite;
     animation: spin 2s linear infinite;
 }
-/** Avec le @keyframe j'active l'annimation du circle **/
+* Avec le @keyframe j'active l'annimation du circle *
 @keyframes spin {
     100%{
         -webkit-transform: rotate(360deg);
@@ -139,11 +162,11 @@ section p{
 h3{
     font-size: 1rem;
     margin-bottom: -2rem;
-}
+} */
 /** END services **/
 
 /** START project portfolio **/
-#portfolio{
+/* #portfolio{
     text-align: center;
 }
 .choice_bar{
@@ -158,14 +181,14 @@ h3{
     background-color: rgba(0, 0, 0, .1);
 }
 .choice_item{
-    /* text-decoration: underline; */
-    /* margin: 1%; */
+    text-decoration: underline; A COMMENTER
+    margin: 1%; A COMMENTER
     min-width: 40px;
     padding: 1%;
-    /* background-color: rgba(0, 0, 0, .1); */
+    background-color: rgba(0, 0, 0, .1); A COMMENTER
 }
 .choice_item:hover{
-    text-decoration: underline; /* Hover mis en place en attendant de pouvoir travailler sur les petis picots des items */
+    text-decoration: underline; Hover mis en place en attendant de pouvoir travailler sur les petis picots des items A COMMENTER
 }
 .projects_wrapper{
     margin-top: 1rem;
@@ -178,8 +201,8 @@ figure{
 }
 .article_image{
     text-align: center;
-    /* display: flex; */
-    /* flex-wrap: wrap; */
+    display: flex; A COMMENTER
+    flex-wrap: wrap; A COMMENTER
 }
 .article_image_wrapper{
     position: relative;
@@ -198,7 +221,7 @@ figure{
     border: 1px solid red;
 }
 figcaption{
-    /* display:none; */
+    display:none; A COMMENTER
     width: 20vw;
     position: absolute;
     z-index: 5;
@@ -210,11 +233,11 @@ figcaption{
 figcaption:hover{
     opacity: 1;
     transition: 0.2sc;
-}
+} */
 /** END project portfolio **/
 
 /** START contact section **/
-#contact{
+/* #contact{
     background-color: white;
 }
 #contact{
@@ -258,7 +281,7 @@ form label{
     color: black;
 }
 input, textarea{
-    /* appearance: none; */
+    appearance: none; A COMMENTER
     margin: 2%;
     padding: 1%;
     width: 250px;
@@ -272,7 +295,7 @@ textarea{
     background-color: #2596be;
     color: white;
     box-shadow: inset;
-}
+} */
 
 /** START footer **/
 footer{
